@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/e94786ac74.js" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid jusfify-content-between">
+            <a class="navbar-brand" href="P01_index.html">
+                <i class="fa-solid fa-seedling icon-color"></i>
+            </a>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="P01_index.html" aria-current="page">Inicio <span class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="P01_about_us.html">Sobre nosotros</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Productos</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="P01_cat_A.html">Categoria A</a>
+                            <a class="dropdown-item" href="P01_cat_B.html">Categoria B</a>
+                        </div>
+                    </li>
+                    <form class="d-flex my-2 my-lg-0">
+                        <input class="form-control me-sm-2" type="text" placeholder="Search">
+                        <button id = "boton-custom" class="btn" type="submit">Search</button>
+                    </form>
+                </ul>
+                <div class = "Contenedor">
+                    <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"  data-bs-toggle="modal" data-bs-target="#userModal" role = "button"><i class="fa-solid fa-user icon-color" ></i> &nbsp;  Ingresar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="P01_cart.html"><i class="fa-solid fa-cart-shopping icon-color"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="P01_orders.html" role = "button"> Pedidos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </nav>
+  </header>
+
+  <main>
+    <br>
+    <!--Productos-->
+    <div class = "container"> 
+        <div class = "row">
+            <div class="col-lg-3 col-md-4 col-6">
+                <div id = "card" class="card mb-4">
+                    <img id = "card-img" class="card-img-top" src="IMAGES/planta1.png" alt="Producto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Jardinería de Contenedor</h5>
+                        <p class="card-text">Plantas en macetas, jardineras o contenedores adecuados para el espacio interior.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+                <div id = "card" class="card mb-4">
+                    <img id = "card-img" class="card-img-top" src="IMAGES/planta2.jpg" alt="Producto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Jardinería Vertical</h5>
+                        <p class="card-text"> Plantas en estructuras verticales, como jardines verticales de pared, estanterías con plantas, o enrejados colgantes. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+                <div id = "card" class="card mb-4">
+                    <img id = "card-img" class="card-img-top" src="IMAGES/planta3.jpg" alt="Producto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Terrarios</h5>
+                        <p class="card-text">Ecosistemas miniatura encapsulados en recipientes de vidrio o plástico.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+                <div id = "card" class="card mb-4">
+                    <img id = "card-img" class="card-img-top" src="IMAGES/planta4.png" alt="Producto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Jardinería de Interior Hidropónica</h5>
+                        <p class="card-text"> Plantas cultivadas en agua en lugar de tierra. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+                <div id = "card" class="card mb-4">
+                    <img id = "card-img" class="card-img-top" src="IMAGES/planta5.jpg" alt="Producto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Jardinería de Interior con Luz Artificial</h5>
+                        <p class="card-text">En entornos con luz natural limitada, la jardinería con luz artificial es esencial.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </main>
+  <footer>
+    <!-- Pagination -->
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+                <a class="color page-link" href="#" tabindex="-1" >«</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#" >1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li cclass="page-item"><a class="page-link" href="#">3</a></li>
+            <li cclass="page-item">
+                <a class="page-link" href="#">»</a>
+            </li>
+        </ul>
+    </nav>
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
