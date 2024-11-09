@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e94786ac74.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid jusfify-content-between">
+            <a class="navbar-brand" href="P01_index.html">
+                <i class="fa-solid fa-seedling icon-color"></i>
+            </a>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="P01_index.html" aria-current="page">Inicio <span class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="P01_about_us.html">Sobre nosotros</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Productos</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="P01_cat_A.html">Categoria A</a>
+                            <a class="dropdown-item" href="P01_cat_B.html">Categoria B</a>
+                        </div>
+                    </li>
+                    <form class="d-flex my-2 my-lg-0">
+                        <input class="form-control me-sm-2" type="text" placeholder="Search">
+                        <button id = "boton-custom" class="btn" type="submit">Search</button>
+                    </form>
+                </ul>
+                <div class = "Contenedor">
+                    <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"  data-bs-toggle="modal" data-bs-target="#userModal" role = "button"><i class="fa-solid fa-user icon-color" ></i> &nbsp;  Ingresar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="P01_cart.html"><i class="fa-solid fa-cart-shopping icon-color"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="P01_orders.html" role = "button"> Pedidos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </nav>
+  </header>
+
+  <main>
+    <!-- Media-objects -->
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Primera columna -->
+            <div class="col-md-8">
+                <div id = "large-media" class="media border p-3">
+                    <img id = "media-mini" src="IMAGES/planta1.png" alt="Imagen" class="mr-3">
+                    <div class="media-body input-width">
+                        <h4 class="mt-0 mb-1">Jardinería de Contenedor &nbsp;<button type = "button" class="btn btn-danger"><i class="fa-solid fa-trash "></i></button></h4><br>
+                        <div class="input-group mb-3" >
+                            <span class="input-group-text">Cantidad:</span>
+                            <input type="text" class="form-control" id="Cantidad" > 
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text custom-width">Precio:</span>
+                            <input type="text" class="form-control" id="Precio"> 
+                            <span class="input-group-text">MXN:</span>
+                        </div>
+                    </div>
+                </div>
+                <div id = "large-media" class="media border p-3">
+                    <img id = "media-mini" src="IMAGES/planta2.jpg" alt="Imagen" class="mr-3">
+                    <div class="media-body input-width">
+                        <h4 class="mt-0 mb-1">Jardinería Vertical &nbsp;<button type = "button" class="btn btn-danger"><i class="fa-solid fa-trash "></i></button></h4><br>
+                        <div class="input-group mb-3" >
+                            <span class="input-group-text">Cantidad:</span>
+                            <input type="text" class="form-control" id="Cantidad" > 
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text custom-width" >Precio:</span>
+                            <input type="text" class="form-control" id="Precio"> 
+                            <span class="input-group-text">MXN:</span>
+                        </div>
+                    </div>
+                </div>
+                <div id = "large-media" class="media border p-3">
+                    <img id = "media-mini" src="IMAGES/planta3.jpg" alt="Imagen" class="mr-3">
+                    <div class="media-body input-width">
+                        <h4 class="mt-0 mb-1">Terrarios &nbsp;<button type = "button" class="btn btn-danger"><i class="fa-solid fa-trash "></i></button></h4><br>
+                        <div class="input-group mb-3" >
+                            <span class="input-group-text">Cantidad:</span>
+                            <input type="text" class="form-control" id="Cantidad" > 
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text custom-width">Precio:</span>
+                            <input type="text" class="form-control" id="Precio"> 
+                            <span class="input-group-text">MXN:</span>
+                        </div>
+                    </div>
+                </div>
+                <div id = "large-media" class="media border p-3">
+                    <img id = "media-mini" src="IMAGES/planta4.png" alt="Imagen" class="mr-3">
+                    <div class="media-body input-width">
+                        <h4 class="mt-0 mb-1">Jardinería de Interior Hidropónica &nbsp;<button type = "button" class="btn btn-danger"><i class="fa-solid fa-trash "></i></button></h4><br>
+                        <div class="input-group mb-3" >
+                            <span class="input-group-text">Cantidad:</span>
+                            <input type="text" class="form-control" id="Cantidad" > 
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text custom-width">Precio:</span>
+                            <input type="text" class="form-control" id="Precio"> 
+                            <span class="input-group-text">MXN:</span>
+                        </div>
+                    </div>
+                </div>
+                <div id = "large-media" class="media border p-3">
+                    <img id = "media-mini" src="IMAGES/planta5.jpg" alt="Imagen" class="mr-3">
+                    <div class="media-body input-width">
+                        <h4 class="mt-0 mb-1">Planta con Luz Artificial &nbsp;<button type = "button" class="btn btn-danger"><i class="fa-solid fa-trash "></i></button></h4><br>
+                        <div class="input-group mb-3" >
+                            <span class="input-group-text">Cantidad:</span>
+                            <input type="text" class="form-control" id="Cantidad" > 
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text custom-width">Precio:</span>
+                            <input type="text" class="form-control" id="Precio"> 
+                            <span class="input-group-text">MXN:</span>
+                        </div>
+                    </div>
+                </div>
+                <div id = "large-media" class="media border p-3">
+                    <img id = "media-mini" src="IMAGES/planta6.jpg" alt="Imagen" class="mr-3">
+                    <div class="media-body input-width">
+                        <h4 class="mt-0 mb-1">Jardinería Temática &nbsp;<button type = "button" class="btn btn-danger"><i class="fa-solid fa-trash "></i></button></h4><br>
+                        <div class="input-group mb-3" >
+                            <span class="input-group-text">Cantidad:</span>
+                            <input type="text" class="form-control" id="Cantidad" > 
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text custom-width">Precio:</span>
+                            <input type="text" class="form-control" id="Precio"> 
+                            <span class="input-group-text">MXN:</span>
+                        </div>
+                    </div>
+                </div>
+                <div id = "large-media" class="media border p-3">
+                    <img id = "media-mini" src="IMAGES/planta7.jpg" alt="Imagen" class="mr-3">
+                    <div class="media-body input-width">
+                        <h4 class="mt-0 mb-1">Jardinería de Bonsái &nbsp;<button type = "button" class="btn btn-danger"><i class="fa-solid fa-trash "></i></button></h4><br>
+                        <div class="input-group mb-3" >
+                            <span class="input-group-text">Cantidad:</span>
+                            <input type="text" class="form-control" id="Cantidad" > 
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text custom-width">Precio:</span>
+                            <input type="text" class="form-control" id="Precio"> 
+                            <span class="input-group-text">MXN:</span>
+                        </div>
+                    </div>
+                </div>
+                <div id = "large-media" class="media border p-3">
+                    <img id = "media-mini" src="IMAGES/planta8.png" alt="Imagen" class="mr-3">
+                    <div class="media-body input-width">
+                        <h4 class="mt-0 mb-1">Jardinería de Plantas Colgantes &nbsp;<button type = "button" class="btn btn-danger"><i class="fa-solid fa-trash "></i></button></h4><br>
+                        <div class="input-group mb-3" >
+                            <span class="input-group-text">Cantidad:</span>
+                            <input type="text" class="form-control" id="Cantidad" > 
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text custom-width">Precio:</span>
+                            <input type="text" class="form-control" id="Precio"> 
+                            <span class="input-group-text">MXN:</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Segunda Columna -->
+            <div class="col-md-4">
+                <div class="media border p-3">
+                    <div class="media-body">
+                        <h4 class="mt-0">Total de compra:</h4>
+                        <p><b>Producto A:</b> 2 x 20.00 MXN</p>
+                        <p><b>Producto B:</b> 5 x 30.00 MXN</p>
+                        <p><b>Costo de envío:</b> 60.00 MXN</p>
+                        <h4><b>Total: 250.00 MXN </b></h1>
+                        <div  style="text-align: center;">
+                            <button id = "boton-pagar" type="submit" class="btn">Pagar</button><br>
+                            <button class="btn btn-danger" type="submit" style="margin-top: 10px; width: 110px;">Cancelar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

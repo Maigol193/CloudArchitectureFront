@@ -1,0 +1,3 @@
+Lo nuevo que aprendí fue el funcionamiento de los media-object a la vez que entendí mejor como adaptar los objetos al tamaño 
+de la pantalla. Lo que me costo más trabajo fue la página del carrito por lo mismo que no sabia como funcionaban los media-object.
+En general la practica no estuvo complicada pero sí estuvo larga. Le invertí entre 15-20 horas para resolverlo. 
