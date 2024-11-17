@@ -1,5 +1,5 @@
 function fetchProducts(callback) {
-  fetch('ec2-3-222-117-215.compute-1.amazonaws.com/api/productos')
+  fetch('http://ec2-3-222-117-215.compute-1.amazonaws.com/api/productos')
     .then(response => response.json())
     .then(products => callback(products))
     .catch(err => console.error('Error al obtener productos:', err));
@@ -46,7 +46,7 @@ function editProduct(productId, name, description, price, quantity) {
 displayProducts();
 
 function addProduct(product, callback) {
-  fetch('ec2-3-222-117-215.compute-1.amazonaws.com/api/productos', {
+  fetch('http://ec2-3-222-117-215.compute-1.amazonaws.com/api/productos', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(product),
@@ -75,7 +75,7 @@ if (addProductForm) {
 }
 
 function deleteProduct(productId) {
-  fetch('ec2-3-222-117-215.compute-1.amazonaws.com/api/productos/' + productId, {
+  fetch('http://ec2-3-222-117-215.compute-1.amazonaws.com/api/productos/' + productId, {
     method: 'DELETE',
   })
     .then(() => displayProducts())
@@ -83,7 +83,7 @@ function deleteProduct(productId) {
 }
 
 function updateProduct(productId, product, callback) {
-  fetch('ec2-3-222-117-215.compute-1.amazonaws.com/api/productos/' + productId, {
+  fetch('http://ec2-3-222-117-215.compute-1.amazonaws.com/api/productos/' + productId, {
     method: 'PUT',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(product),
